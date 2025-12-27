@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Unimarine Hidrolik Servis | Gemi Bakım Onarım & Marin Hidrolik Tamiri</title>
+  <meta name="description" content="Gemi bakım onarım firmaları arasında lider Unimarine; gemi hidrolik sistemleri bakım, hidrolik pompa tamiri, silindir onarımı ve gemi vinç bakımı hizmetleri sunar. 7/24 teknik destek.">
+  <meta name="keywords" content="gemi bakım onarım firmaları, gemi bakım servisi, gemi onarım hizmeti, deniz hidrolik servisi, marin hidrolik tamiri, gemi hidrolik sistemleri bakım, hidrolik sistem tamiri gemi, gemi hidrolik arıza servisi, hidrolik pompa tamiri gemi, hidrolik silindir onarımı, gemi dümen hidrolik sistemi servisi, gemi vinç bakımı, hidrolik motor tamiri denizcilik, gemi güverte ekipmanları bakımı, hidrolik sistem revizyonu">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="Unimarine Hidrolik Servis | Profesyonel Gemi Bakım & Onarım">
+  <meta property="og:description" content="Denizcilik sektöründe güvenilir hidrolik çözümler. Pompa, silindir, vinç ve dümen sistemleri uzman bakımı.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.unimarine.com">
+
+  <script>
+    window.tailwind = {
+      config: {
+        future: {
+          suppressDeprecationWarnings: true
+        }
+      }
+    };
+  </script>
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <style>
+    html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 70px; /* Header'ınızın yaklaşık yüksekliği + biraz nefes payı */
+      }
+    .btn{ @apply inline-flex items-center justify-center px-5 py-2 rounded-xl font-medium shadow-sm; }
+    .btn-primary{ @apply bg-blue-600 text-white hover:bg-blue-700; }
+    .btn-outline{ @apply border border-blue-600 text-blue-700 hover:bg-blue-50; }
+    .nav-link{ @apply block px-4 py-2 rounded-lg hover:bg-blue-50; }
+    .section{ @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12; }
+  </style>
+</head>
+<body class="min-h-screen bg-gray-50 text-gray-800">
+
+  <!-- Sidebar -->
+  <div id="sidebar" class="fixed inset-0 z-40 hidden">
+    <div class="absolute inset-0 bg-black/50" onclick="toggleSidebar(false)"></div>
+    <aside class="absolute left-0 top-0 h-full w-80 bg-white shadow-xl p-6 overflow-y-auto">
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-xl font-semibold">Unimarine</h2>
+        <button class="text-gray-500" onclick="toggleSidebar(false)"><i class="fa-solid fa-xmark text-2xl"></i></button>
+      </div>
+      <nav class="space-y-2">
+        <ul class="flex flex-col gap-3">
+          <li><a href="index.html#vizyon-misyon" class="nav-link block w-full hover:text-gray-900 hover:font-semibold" onclick="toggleSidebar(false)">Vizyon & Misyon</a></li>
+          <li><a href="index.html#faaliyetler"   class="nav-link  block w-full hover:text-gray-900 hover:font-semibold" onclick="toggleSidebar(false)">Faaliyetlerimiz</a></li>
+          <li><a href="index.html#iletisim"      class="nav-link  block w-full hover:text-gray-900 hover:font-semibold" onclick="toggleSidebar(false)">İletişim</a></li>
+          <li><a href="index.html#form"          class="btn btn-outline  block w-full hover:text-gray-900 hover:font-semibold" onclick="toggleSidebar(false)">Bize Ulaşın</a></li>
+        </ul>
+      </nav>
+    </aside>
+  </div>
+
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b">
+    <div class="section py-4  px-8">
+      <div class="flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-blue-600 text-white text-xl font-bold">UH</span>
+          <span class="font-semibold">Unimarine Hidrolik Servis</span>
+        </a>
+        <nav class="hidden md:flex md:flex-row md:items-start md:justify-center gap-2">
+          <a href="index.html#vizyon-misyon" class="nav-link hover:text-gray-900 hover:font-semibold">Vizyon & Misyon</a>
+          <a href="index.html#faaliyetler"   class="nav-link  hover:text-gray-900 hover:font-semibold">Faaliyetlerimiz</a>
+          <a href="index.html#iletisim"      class="nav-link  hover:text-gray-900 hover:font-semibold">İletişim</a>
+          <a href="index.html#form"          class="btn btn-outline  hover:text-gray-900 hover:font-semibold">Bize Ulaşın</a>
+        </nav>
+        <button class="md:hidden" onclick="toggleSidebar(true)" aria-label="Menüyü Aç">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="anasayfa" class="relative">
+    <img src="https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1600" class="absolute inset-0 h-full w-full object-cover" alt="">
+    <div class="relative section px-8 py-24 lg:py-32 text-white">
+      <div class="max-w-3xl">
+        <h1 class="text-3xl sm:text-5xl font-extrabold leading-tight drop-shadow">Denizcilikte Güvenilir Hidrolik Bakım & Onarım</h1>
+        <p class="mt-4 text-lg text-white/95">Gemi hidrolik sistemleri için 7/24 saha desteği, arıza tespiti, revizyon ve modernizasyon çözümleri.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#form" class="btn btn-primary"><i class="fa-regular fa-paper-plane mr-2"></i>Teklif Al</a>
+          <a href="#faaliyetler" class="btn btn-outline">Hizmetlerimizi Görün</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vizyon & Misyon -->
+  <section id="vizyon-misyon" class="section bg-white">
+    <div class="px-8 pt-8 grid lg:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold">Vizyonumuz</h2>
+        <p class="mt-4 leading-relaxed">
+          Denizcilik sektöründe suüstü gemilerinin hidrolik sistemleri alanında yenilikçi, güvenilir ve sürdürülebilir çözümler sunarak; ulusal ve uluslararası ölçekte tercih edilen lider bakım ve onarım firması olmak.
+        </p>
+      </div>
+      <div>
+        <h2 class="text-2xl font-bold">Misyonumuz</h2>
+        <p class="mt-4 leading-relaxed">
+          Müşterilerimizin ihtiyaçlarını en yüksek kalite standartlarında, güvenli, hızlı ve etkin hizmet anlayışıyla karşılamak. Hidrolik güverte vinçleri, rampalar, kapaklar ve diğer donanımların bakım-onarım süreçlerinde uzman ekibimiz ve teknik altyapımızla gemilerin güvenli ve kesintisiz operasyonlarına katkı sağlamak.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faaliyetlerimiz (kartlar linkli) -->
+  <section id="faaliyetler" class="section px-8 pt-8">
+    <div class="max-w-3xl mb-10">
+      <h2 class="text-2xl font-bold">Faaliyetlerimiz</h2>
+      <p class="mt-3 text-gray-600">Bakım, arıza tespiti, sahada onarım, revizyon ve yedek parça temini sağlıyoruz.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="services/demirleme-irgati.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Demirleme Irgatları</h3>
+        <p class="mt-2 text-sm text-gray-600">Zincir/halat, fren ve otomatik gerilim ayarları.</p>
+      </a>
+
+      <a href="services/manevra-irgati.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Manevra Irgatları</h3>
+        <p class="mt-2 text-sm text-gray-600">Zincir/halat, fren ve otomatik gerilim ayarları.</p>
+      </a>
+
+      <a href="services/hortum-kreyn.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Hortum Elleçleme Kreynleri</h3>
+        <p class="mt-2 text-sm text-gray-600">Elektro-hidrolik vinç bakım/onarımı, ATEX uygunluğu.</p>
+      </a>
+
+      <a href="services/guverte-kreyn.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Güverte Kreynleri</h3>
+        <p class="mt-2 text-sm text-gray-600">Elektro-hidrolik vinç bakım/onarımı, ATEX uygunluğu.</p>
+      </a>
+
+      <a href="services/ambar-kapak.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Ambar Kapakları ve Silindirler</h3>
+        <p class="mt-2 text-sm text-gray-600">Sızdırmazlık ve piston revizyonu, testler.</p>
+      </a>
+
+      <a href="services/kurtarma-vinc.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Kurtarma Vinçleri</h3>
+        <p class="mt-2 text-sm text-gray-600">SOLAS uyumlu vinç ve mekanizma bakımı.</p>
+      </a>
+
+      <a href="services/servis-vinc.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Servis Vinçleri</h3>
+        <p class="mt-2 text-sm text-gray-600">SOLAS uyumlu vinç ve mekanizma bakımı.</p>
+      </a>
+
+      <a href="services/serbest-dusmeli-bot.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Serbest Düşmeli Bot</h3>
+        <p class="mt-2 text-sm text-gray-600">SOLAS uyumlu vinç ve mekanizma bakımı.</p>
+      </a>
+
+      <a href="services/hpu.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Hidrolik Güç Üniteleri (HPU)</h3>
+        <p class="mt-2 text-sm text-gray-600">Pompa, motor, valf, tank, yağ analizi.</p>
+      </a>
+
+      <a href="services/periyodik-bakim.html" class="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition">
+        <h3 class="font-semibold">Periyodik Bakım & Revizyon</h3>
+        <p class="mt-2 text-sm text-gray-600">Önleyici bakım planları ve kontrol listeleri.</p>
+      </a>
+    </div>
+
+    <div class="mt-10 bg-gradient-to-r from-blue-50 to-blue-100 border rounded-2xl p-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div>
+        <h4 class="font-semibold">Acil arıza desteği</h4>
+        <p class="text-sm text-gray-700 mt-1">Vinç, dümen ve HPU sistemleri için 7/24 müdahale.</p>
+      </div>
+      <a href="#form" class="btn btn-primary">Servis Talep Et</a>
+    </div>
+  </section>
+
+  <!-- İletişim -->
+  <section id="iletisim" class="section bg-white py-8">
+    <h2 class="text-2xl font-bold mt-8 mb-4 text-center">İletişim</h2>
+    <ul class="space-y-3 text-gray-700 text-center mb-8 px-8">
+      <li><i class="fa-solid fa-location-dot text-blue-600 mr-2"></i>TOPÇULAR MAH. ADNAN KAHVECI CAD. ÇAĞLAR VILLALARI NO: 187 GÖLCÜK / KOCAELI</li>
+      <li><i class="fa-solid fa-phone text-blue-600 mr-2"></i>0 (533) 255 60 50 • 0 (507) 830 41 41 • 0 (530) 554 71 69</li>
+      <li><i class="fa-solid fa-envelope text-blue-600 mr-2"></i><a class="text-blue-600" href="mailto:iletisim@unimarine.com">iletisim@unimarine.com</a></li>
+    </ul>
+    <div class="grid lg:grid-cols-2 gap-8 px-8">
+      <div>
+        <!-- <div class="mt-6">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600" alt="" class="rounded-2xl shadow-md" />
+        </div> -->
+        <div class="relative bg-cover bg-center h-96 rounded-2xl" style="background-image: url('./assets/324.jpg');">
+          <div class="absolute inset-0 bg-black/50 rounded-2xl">
+            <div class="relative z-10 flex items-center justify-center h-full">
+              <h2 class="text-white text-xl md:text-3xl font-bold">Bizimle İletişime Geçin</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="h-[382px] w-full rounded-2xl overflow-hidden shadow">
+        <iframe title="Harita" width="100%" height="100%" loading="lazy" style="border:0"
+          src="https://www.google.com/maps?q=Top%C3%A7ular%20Mah.%20Adnan%20Kahveci%20Cad.%20%C3%87a%C4%9Flar%20Villalar%C4%B1%20187%20G%C3%B6lc%C3%BCk%20Kocaeli&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+
+    <!-- İletişim Formu -->
+<section id="form" class="section bg-gray-100 pt-8">
+
+    <h2 class="text-2xl font-bold mb-4 px-8">Bize Ulaşın</h2>
+    <p class="text-gray-700 mb-6 px-8">Hizmetlerimiz hakkında daha fazla bilgi almak veya özel bir teklif talep etmek için lütfen aşağıdaki formu doldurun. En kısa sürede sizinle iletişime geçeceğiz.</p>
+
+  <form 
+    id="contactForm" 
+    class="mt-6 bg-white rounded-2xl shadow-sm p-6 grid sm:grid-cols-2 gap-4"
+    action="https://api.web3forms.com/submit" 
+    method="POST">
+
+    <!-- ZORUNLU: erişim anahtarı -->
+    <input type="hidden" name="access_key" value="7c839355-bb2a-49d6-9660-ab280600e0bc">
+
+    <!-- İsteğe bağlı: form başlığı / kimden -->
+    <input type="hidden" name="from_name" value="Unimarine Hidrolik Servis" />
+    <input type="hidden" name="subject"   value="Yeni İletişim Talebi" />
+
+    <!-- Spam koruması (honeypot): kullanıcı görmez -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display:none;">
+
+    <div>
+      <label class="block text-sm font-medium mb-1">Ad Soyad</label>
+      <input required name="name" type="text" class="w-full rounded-xl border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+    </div>
+
+    <div>
+      <label class="block text-sm font-medium mb-1">E-posta</label>
+      <input required name="email" type="email" class="w-full rounded-xl border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+    </div>
+
+    <div class="sm:col-span-2">
+      <label class="block text-sm font-medium mb-1">Telefon</label>
+      <input name="phone" type="tel" class="w-full rounded-xl border-gray-300 focus:border-blue-500 focus:ring-blue-500">
+    </div>
+
+    <div class="sm:col-span-2">
+      <label class="block text-sm font-medium mb-1">Mesajınız</label>
+      <textarea required name="message" rows="5" class="w-full rounded-xl border-gray-300 focus:border-blue-500 focus:ring-blue-500"></textarea>
+    </div>
+
+    <!-- Başarılı gönderim sonrası yönlendirme (opsiyonel) -->
+    <input type="hidden" name="redirect" value="https://unimarine.com/tesekkurler.html" />
+
+    <div class="sm:col-span-2 flex flex-col items-start justify-center gap-4">
+      <p class="text-xs text-gray-500">Kişisel veriler KVKK kapsamında korunur.</p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300 self-center">Gönder</button>
+    </div>
+  </form>
+
+</section>
+
+<footer class="bg-white border-t">
+  <div class="section py-8 text-sm text-gray-600 flex flex-col items-center gap-6">
+    
+    <div>© <span id="y"></span> Unimarine Hidrolik Servis. Tüm hakları saklıdır.</div>
+    
+    <nav class="flex gap-4">
+      <a href="#vizyon-misyon" class="text-blue-600 hover:underline">Vizyon & Misyon</a>
+      <a href="#faaliyetler"   class="text-blue-600 hover:underline">Faaliyetlerimiz</a>
+      <a href="#iletisim"      class="text-blue-600 hover:underline">İletişim</a>
+    </nav>
+
+    <div class="flex gap-5 text-xl">
+      <a href="https://wa.me/905332556050" target="_blank" class="text-green-500 hover:scale-110 transition-transform" title="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com/unimarine" target="_blank" class="text-pink-600 hover:scale-110 transition-transform" title="Instagram">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com/unimarine" target="_blank" class="text-blue-700 hover:scale-110 transition-transform" title="Facebook">
+        <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://tiktok.com/@unimarine" target="_blank" class="text-black hover:scale-110 transition-transform" title="TikTok">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://twitter.com/unimarine" target="_blank" class="text-gray-800 hover:scale-110 transition-transform" title="X (Twitter)">
+        <i class="fa-brands fa-x-twitter"></i>
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+  <script>
+    const yEl = document.getElementById('y'); yEl && (yEl.textContent = new Date().getFullYear());
+
+    function toggleSidebar(show) {
+      const el = document.getElementById('sidebar');
+      if (!el) return;
+
+      if (show) {
+        el.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      } else {
+        el.classList.add('hidden');
+        document.body.style.overflow = '';
+      }
+    }
+    
+    const f = document.getElementById('contactForm');
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = f.querySelector('button'); btn.disabled = true;
+      try{
+        const res = await fetch(f.action, { method:'POST', body:new FormData(f) });
+        const data = await res.json();
+        if (data.success) {
+          alert('Teşekkürler! Talebiniz alındı.');
+          f.reset();
+        } else {
+          alert('Gönderilemedi: ' + (data.message || 'Lütfen tekrar deneyin.'));
+        }
+      } catch(err){
+        alert('Bağlantı hatası. Lütfen tekrar deneyin.');
+      } finally { btn.disabled = false; }
+    });
+  </script>
+</body>
+</html>
+
+
